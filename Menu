@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+main()
+{
+    int a;
+    printf("Items on the Menu:\n\n1. Pizza......... Rs.239 \n2. Burger........ Rs.129 \n3. Pasta......... Rs.179 \n4. French Fries.. Rs.99 \n5. Sandwich...... Rs.149\nPlave your order: \n");
+    scanf("%d",&a);
+    
+    switch(a)
+    {
+    case 1:
+    printf("Your order for 1 Pizza for Rs.239 has been placed");
+    break;
+    
+    case 2:
+    printf("Your order for 1 Burger for Rs.129 has been placed");
+    break;
+
+    case 3:
+    printf("Your order for 1 Pasta for Rs.179 has been placed");
+    break;
+
+    case 4:
+    printf("Your order for 1 French Fries for Rs.99 has been placed");
+    break;
+
+    case 5:
+    printf("Your order for 1 Sandwich for Rs.149 has been placed");
+    break;
+
+    default :
+    printf("Invalid Choice. Enter a no between 1 and 5");
+    break;
+    }
+
+} 
