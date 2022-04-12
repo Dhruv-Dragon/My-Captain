@@ -1,0 +1,84 @@
+#include<iostream>
+
+const int m = 50 
+int itemcode[m];
+float itemprice[m];
+int count;
+
+public:
+void
+CNT ()
+{
+count = 0}
+
+void
+getitem ()
+{
+  cout << "Enter Itemcode" >> cin >> itemcode[count];
+  cout << "Enter itemprice" >> cin >> itemprice[count];
+count++}
+
+void
+displaysum ()
+{
+  float sum = 0 for (int i = 0; i < count; i++)
+    {
+      sum = sum + itemprice[i];
+      cout << "\n Total_amount=" << sum << endl;
+    }
+  void displayitem ()
+  {
+    cout << "\n Code \t Price \n";
+    for (int i = 0; i < count; i++)
+      {
+	cout << "\n" << itemcode[i] << "\t";
+	cout << itemprice[i] << endl;
+      }
+    cout << "\m";
+  }
+  void remove ()
+  {
+    int a;
+    cout << "Enter itemcode";
+    cin >> a;
+    for (int i = 0; i < count; i++)
+      {
+	if (itemcode[i] == a)
+	  itemprice[i] = 0;
+      }
+  }
+};
+
+int
+main ()
+{
+  itemorder;
+  order.CNT ();
+  int x;
+  do
+    {
+      cout << "MENU";
+      cout << "\n 1. Add an Item";
+      cout << "\n 2.Display Total amount";
+      cout << "\n 3.Display all items";
+      cout << "\n 4. Delete an item";
+      cout << "\n 5. Quit";
+      cout << "Enter Choice";
+      cin >> x;
+      switch (x)
+	{
+	Case 1:order.getitem ();
+	  break;
+	Case 2:order.displaysum;
+	  break;
+	Case 3:order.displayitems ();
+	  break;
+	Case 4:order.remove ();
+	  break;
+	Case 5:break;
+	Default:<<"Wrong Choice Try Again";
+	}
+    }
+  while (x != 5);
+  return 0;
+}
